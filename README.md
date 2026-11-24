@@ -26,9 +26,7 @@ typedef struct {
     float preco_medio_compra;
 } Carteira;
 
-// 1. Escolhe a corretora ideal para operacoes automaticas (Precisa ter API e menor taxa)
-Corretora selecionar_corretora_automatica(Corretora lista[], int total) {
-    Corretora melhor = {"Nenhuma", 999.0, 0};
+
     
     for (int i = 0; i < total; i++) {
         if (lista[i].suporte_api == 1 && lista[i].taxa_corretagem < melhor.taxa_corretagem) {
